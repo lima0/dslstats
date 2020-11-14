@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+const fetch = require('node-fetch');
 
 fetch('http://192.168.1.1/api/ntwk/dslinfo', {
   credentials: 'include',
