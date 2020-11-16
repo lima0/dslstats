@@ -8,7 +8,7 @@ const url = `http://${routerIP}/api/ntwk/dslinfo`;
   const resp = await fetch(url, {
     credentials: 'include',
     headers: {
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:78.0) Firefox/78.0',
       'Accept': '*/*',
       'Accept-Language': 'en-US,en;q=0.5',
       'Upgrade-Insecure-Requests': '1',

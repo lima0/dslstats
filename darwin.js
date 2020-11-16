@@ -6,13 +6,6 @@ exports.activeNICName = function() {
 };
 
 exports.gatewayIP = function(nicName) {
-  // exec(`ipconfig getoption ${nicName} router`, (err, output) => {
-  //     if (err) {
-  //         console.error(err);
-  //         return
-  //     }
-  //     return output
-  // })
   const gateway = execSync(`ipconfig getoption ${nicName} router`);
   return String(gateway).replace('\n', '');
 };
