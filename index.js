@@ -1,7 +1,8 @@
+#!/usr/bin/env node
 const fetch = require('node-fetch');
 const network = require(`./${process.platform}`);
 
-const routerIP = network.gatewayIP(network.activeNICName());
+const routerIP = network.gatewayIP(network.activeNICName() || null);
 const url = `http://${routerIP}/api/ntwk/dslinfo`;
 
 (async () => {
