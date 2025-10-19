@@ -1,5 +1,5 @@
 # DSLStats
-This node script will show you all DSL stats in your terminal (for huawei routers)
+This node script will show you all DSL stats in your terminal (wow) (for huawei routers)
 ## Installation:
 You need to have node and git installed
 ``` 
